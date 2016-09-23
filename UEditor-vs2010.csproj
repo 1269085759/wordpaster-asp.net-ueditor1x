@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FE0B8C96-333E-4A98-9E0D-A7E5CAAC0302}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UEditor</RootNamespace>
+    <AssemblyName>UEditor</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dialogs\anchor\anchor.html" />
+    <Content Include="dialogs\attachment\attachment.css" />
+    <Content Include="dialogs\attachment\attachment.html" />
+    <Content Include="dialogs\attachment\callbacks.js" />
+    <Content Include="dialogs\attachment\fileTypeImages\icon_chm.gif" />
+    <Content Include="dialogs\attachment\fileTypeImages\icon_default.png" />
+    <Content Include="dialogs\attachment\fileTypeImages\icon_doc.gif" />
+    <Content Include="dialogs\attachment\fileTypeImages\icon_exe.gif" />
+    <Content Include="dialogs\attachment\fileTypeImages\icon_mp3.gif" />
+    <Content Include="dialogs\attachment\fileTypeImages\icon_mv.gif" />
+    <Content Include="dialogs\attachment\fileTypeImages\icon_pdf.gif" />
+    <Content Include="dialogs\attachment\fileTypeImages\icon_ppt.gif" />
+    <Content Include="dialogs\attachment\fileTypeImages\icon_psd.gif" />
+    <Content Include="dialogs\attachment\fileTypeImages\icon_rar.gif" />
+    <Content Include="dialogs\attachment\fileTypeImages\icon_txt.gif" />
+    <Content Include="dialogs\attachment\fileTypeImages\icon_xls.gif" />
+    <Content Include="dialogs\attachment\fileTypeMaps.js" />
+    <Content Include="dialogs\background\background.css" />
+    <Content Include="dialogs\background\background.html" />
+    <Content Include="dialogs\background\background.js" />
+    <Content Include="dialogs\emotion\emotion.css" />
+    <Content Include="dialogs\emotion\emotion.html" />
+    <Content Include="dialogs\emotion\emotion.js" />
+    <Content Include="dialogs\emotion\images\0.gif" />
+    <Content Include="dialogs\emotion\images\bface.gif" />
+    <Content Include="dialogs\emotion\images\cface.gif" />
+    <Content Include="dialogs\emotion\images\fface.gif" />
+    <Content Include="dialogs\emotion\images\jxface2.gif" />
+    <Content Include="dialogs\emotion\images\neweditor-tab-bg.png" />
+    <Content Include="dialogs\emotion\images\tface.gif" />
+    <Content Include="dialogs\emotion\images\wface.gif" />
+    <Content Include="dialogs\emotion\images\yface.gif" />
+    <Content Include="dialogs\gmap\gmap.html" />
+    <Content Include="dialogs\help\help.css" />
+    <Content Include="dialogs\help\help.html" />
+    <Content Include="dialogs\help\help.js" />
+    <Content Include="dialogs\image\image.css" />
+    <Content Include="dialogs\image\image.html" />
+    <Content Include="dialogs\image\image.js" />
+    <Content Include="dialogs\image\images\center_focus.jpg" />
+    <Content Include="dialogs\image\images\left_focus.jpg" />
+    <Content Include="dialogs\image\images\none_focus.jpg" />
+    <Content Include="dialogs\image\images\right_focus.jpg" />
+    <Content Include="dialogs\image\imageUploader.swf" />
+    <Content Include="dialogs\insertframe\insertframe.html" />
+    <Content Include="dialogs\internal.js" />
+    <Content Include="dialogs\link\link.html" />
+    <Content Include="dialogs\map\map.html" />
+    <Content Include="dialogs\music\music.css" />
+    <Content Include="dialogs\music\music.html" />
+    <Content Include="dialogs\music\music.js" />
+    <Content Include="dialogs\scrawl\images\addimg.png" />
+    <Content Include="dialogs\scrawl\images\brush.png" />
+    <Content Include="dialogs\scrawl\images\delimg.png" />
+    <Content Include="dialogs\scrawl\images\delimgH.png" />
+    <Content Include="dialogs\scrawl\images\empty.png" />
+    <Content Include="dialogs\scrawl\images\emptyH.png" />
+    <Content Include="dialogs\scrawl\images\eraser.png" />
+    <Content Include="dialogs\scrawl\images\redo.png" />
+    <Content Include="dialogs\scrawl\images\redoH.png" />
+    <Content Include="dialogs\scrawl\images\scale.png" />
+    <Content Include="dialogs\scrawl\images\scaleH.png" />
+    <Content Include="dialogs\scrawl\images\size.png" />
+    <Content Include="dialogs\scrawl\images\undo.png" />
+    <Content Include="dialogs\scrawl\images\undoH.png" />
+    <Content Include="dialogs\scrawl\scrawl.css" />
+    <Content Include="dialogs\scrawl\scrawl.html" />
+    <Content Include="dialogs\scrawl\scrawl.js" />
+    <Content Include="dialogs\searchreplace\searchreplace.html" />
+    <Content Include="dialogs\searchreplace\searchreplace.js" />
+    <Content Include="dialogs\snapscreen\snapscreen.html" />
+    <Content Include="dialogs\spechars\spechars.html" />
+    <Content Include="dialogs\spechars\spechars.js" />
+    <Content Include="dialogs\table\dragicon.png" />
+    <Content Include="dialogs\table\edittable.css" />
+    <Content Include="dialogs\table\edittable.html" />
+    <Content Include="dialogs\table\edittable.js" />
+    <Content Include="dialogs\table\edittd.html" />
+    <Content Include="dialogs\table\edittip.html" />
+    <Content Include="dialogs\tangram.js" />
+    <Content Include="dialogs\template\config.js" />
+    <Content Include="dialogs\template\images\bg.gif" />
+    <Content Include="dialogs\template\images\pre0.png" />
+    <Content Include="dialogs\template\images\pre1.png" />
+    <Content Include="dialogs\template\images\pre2.png" />
+    <Content Include="dialogs\template\images\pre3.png" />
+    <Content Include="dialogs\template\images\pre4.png" />
+    <Content Include="dialogs\template\template.css" />
+    <Content Include="dialogs\template\template.html" />
+    <Content Include="dialogs\template\template.js" />
+    <Content Include="dialogs\video\images\center_focus.jpg" />
+    <Content Include="dialogs\video\images\left_focus.jpg" />
+    <Content Include="dialogs\video\images\none_focus.jpg" />
+    <Content Include="dialogs\video\images\right_focus.jpg" />
+    <Content Include="dialogs\video\video.css" />
+    <Content Include="dialogs\video\video.html" />
+    <Content Include="dialogs\video\video.js" />
+    <Content Include="dialogs\webapp\webapp.html" />
+    <Content Include="dialogs\wordimage\fClipboard_ueditor.swf" />
+    <Content Include="dialogs\wordimage\imageUploader.swf" />
+    <Content Include="dialogs\wordimage\wordimage.html" />
+    <Content Include="dialogs\wordimage\wordimage.js" />
+    <Content Include="lang\en\en.js" />
+    <Content Include="lang\en\images\addimage.png" />
+    <Content Include="lang\en\images\alldeletebtnhoverskin.png" />
+    <Content Include="lang\en\images\alldeletebtnupskin.png" />
+    <Content Include="lang\en\images\background.png" />
+    <Content Include="lang\en\images\button.png" />
+    <Content Include="lang\en\images\copy.png" />
+    <Content Include="lang\en\images\deletedisable.png" />
+    <Content Include="lang\en\images\deleteenable.png" />
+    <Content Include="lang\en\images\imglabel.png" />
+    <Content Include="lang\en\images\listbackground.png" />
+    <Content Include="lang\en\images\localimage.png" />
+    <Content Include="lang\en\images\music.png" />
+    <Content Include="lang\en\images\rotateleftdisable.png" />
+    <Content Include="lang\en\images\rotateleftenable.png" />
+    <Content Include="lang\en\images\rotaterightdisable.png" />
+    <Content Include="lang\en\images\rotaterightenable.png" />
+    <Content Include="lang\en\images\upload.png" />
+    <Content Include="lang\zh-cn\images\copy.png" />
+    <Content Include="lang\zh-cn\images\imglabel.png" />
+    <Content Include="lang\zh-cn\images\localimage.png" />
+    <Content Include="lang\zh-cn\images\music.png" />
+    <Content Include="lang\zh-cn\images\upload.png" />
+    <Content Include="lang\zh-cn\zh-cn.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="net\Uploader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="upload.aspx.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload.aspx.designer.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="debug\upload.htm" />
+    <Content Include="index.htm" />
+    <Content Include="net\fileUp.ashx" />
+    <Content Include="net\getContent.ashx" />
+    <Content Include="net\getMovie.ashx" />
+    <Content Include="net\getRemoteImage.ashx" />
+    <Content Include="net\imageManager.ashx" />
+    <Content Include="net\imageUp.ashx" />
+    <Content Include="net\scrawlUp.ashx" />
+    <Content Include="net\Web.config" />
+    <Content Include="themes\default\css\ueditor.css" />
+    <Content Include="themes\default\dialogbase.css" />
+    <Content Include="themes\default\images\anchor.gif" />
+    <Content Include="themes\default\images\arrow.png" />
+    <Content Include="themes\default\images\arrow_down.png" />
+    <Content Include="themes\default\images\arrow_up.png" />
+    <Content Include="themes\default\images\button-bg.gif" />
+    <Content Include="themes\default\images\cancelbutton.gif" />
+    <Content Include="themes\default\images\cursor_h.gif" />
+    <Content Include="themes\default\images\cursor_h.png" />
+    <Content Include="themes\default\images\cursor_v.gif" />
+    <Content Include="themes\default\images\cursor_v.png" />
+    <Content Include="themes\default\images\dialog-title-bg.png" />
+    <Content Include="themes\default\images\filescan.png" />
+    <Content Include="themes\default\images\highlighted.gif" />
+    <Content Include="themes\default\images\icons-all.gif" />
+    <Content Include="themes\default\images\icons.gif" />
+    <Content Include="themes\default\images\icons.png" />
+    <Content Include="themes\default\images\lock.gif" />
+    <Content Include="themes\default\images\neweditor-tab-bg.png" />
+    <Content Include="themes\default\images\pagebreak.gif" />
+    <Content Include="themes\default\images\paster.png" />
+    <Content Include="themes\default\images\scale.png" />
+    <Content Include="themes\default\images\spacer.gif" />
+    <Content Include="themes\default\images\sparator_v.png" />
+    <Content Include="themes\default\images\table-cell-align.png" />
+    <Content Include="themes\default\images\tangram-colorpicker.png" />
+    <Content Include="themes\default\images\toolbar_bg.png" />
+    <Content Include="themes\default\images\unhighlighted.gif" />
+    <Content Include="themes\default\images\upload.png" />
+    <Content Include="themes\default\images\videologo.gif" />
+    <Content Include="themes\default\images\word.gif" />
+    <Content Include="themes\default\images\wordpaste.png" />
+    <Content Include="themes\iframe.css" />
+    <Content Include="third-party\codemirror\codemirror.css" />
+    <Content Include="third-party\codemirror\codemirror.js" />
+    <Content Include="third-party\snapscreen\UEditorSnapscreen.exe" />
+    <Content Include="third-party\swfupload\fileprogress.js" />
+    <Content Include="third-party\swfupload\swfupload.cookies.js" />
+    <Content Include="third-party\swfupload\swfupload.js" />
+    <Content Include="third-party\swfupload\swfupload.proxy.js" />
+    <Content Include="third-party\swfupload\swfupload.queue.js" />
+    <Content Include="third-party\swfupload\swfupload.speed.js" />
+    <Content Include="third-party\swfupload\swfupload.swf" />
+    <Content Include="third-party\swfupload\swfupload_fp9.swf" />
+    <Content Include="third-party\SyntaxHighlighter\shCore.js" />
+    <Content Include="third-party\SyntaxHighlighter\shCoreDefault.css" />
+    <Content Include="ueditor.all.js" />
+    <Content Include="ueditor.all.min.js" />
+    <Content Include="ueditor.config.js" />
+    <Content Include="ueditor.parse.js" />
+    <Content Include="upload.aspx" />
+    <Content Include="WordPaster\css\ico.png" />
+    <Content Include="WordPaster\css\paster.png" />
+    <Content Include="WordPaster\css\WordPaster.css" />
+    <Content Include="WordPaster\error.png" />
+    <Content Include="WordPaster\js\jquery-1.4.min.js" />
+    <Content Include="WordPaster\js\skygqbox.1.3.css" />
+    <Content Include="WordPaster\js\skygqbox.1.3.js" />
+    <Content Include="WordPaster\js\WordPaster.js" />
+    <Content Include="WordPaster\setup\1.gif" />
+    <Content Include="WordPaster\setup\2.gif" />
+    <Content Include="WordPaster\setup\3.gif" />
+    <Content Include="WordPaster\setup\4.gif" />
+    <Content Include="WordPaster\setup\loading.gif" />
+    <Content Include="WordPaster\setup\setup.htm" />
+    <Content Include="WordPaster\upload.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1761</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
