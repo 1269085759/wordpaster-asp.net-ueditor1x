@@ -277,6 +277,9 @@
     <Content Include="WordPaster\js\json2.min.js" />
     <Content Include="WordPaster\js\skygqbox.css" />
     <Content Include="WordPaster\js\skygqbox.js" />
+    <Content Include="WordPaster\js\w.app.js" />
+    <Content Include="WordPaster\js\w.edge.js" />
+    <Content Include="WordPaster\js\w.file.js" />
     <Content Include="WordPaster\js\WordPaster.js" />
     <Content Include="WordPaster\setup\1.gif" />
     <Content Include="WordPaster\setup\2.gif" />
